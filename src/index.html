@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Pink</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script src="https://kit.fontawesome.com/12557ddd3e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.3.0/dist/css/glide.core.min.css">
+    <script src="https://unpkg.com/@glidejs/glide@3.3.0/dist/glide.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark text-uppercase text-center header__main-nav">
+        <div class="container align-items-md-center">
+          <a class="navbar-brand" href="index.html">
+            <picture>
+              <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 668px)" srcset="img/logo-tablet.svg">
+              <img class="header__logo" src="img/logo-mobile.svg" width="85" height="22" alt="Логотип Pink">
+            </picture>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-md-0 justify-content-md-end justify-content-lg-end" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mr-md-0 mr-lg-0 main-nav__list">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Конкурс</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Приложение Pink - взгляните на дизнь иначе!</h1>
+      <section class="intro">
+        <div class="intro__bg--mobile"></div>
+        <div class="intro__wrapper">
+
+          <div class="intro__img">
+            <picture>
+              <source media="(min-width: 620px)" srcset="./img/intro/iphone-6-in-hand.png">
+              <img src="./img/intro/iphone-5-in-hand.png" alt="Фотография телефона с приложением Pink">
+            </picture>
+          </div>
+
+          <div class="intro__description--container">
+            <h2 class="intro__heading">Взгляните на дизнь иначе!</h2>
+
+            <button type="button" class="btn btn-light btn-block btn-custom intro__button">Скачать приложение</button>
+
+            <div class="intro__icon-wrapper">
+              <a href="#" class="intro__icon intro__icon--apple">
+                <i class="fab fa-apple fa-4x"></i>
+              </a>
+              <a href="#" class="intro__icon intro__icon--android">
+                <i class="fab fa-android fa-4x"></i>
+              </a>
+              <a href="#" class="intro__icon intro__icon--windows">
+                <i class="fab fa-windows fa-4x"></i>
+              </a>
+            </div>
+
+            <p class="intro__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <h2 class="about__heading">Устали от серости мегаполиса?</h2>
+            <h2 class="about__heading">Нам есть, что вам предложить!</h2>
+            <ul class="about__feature-list">
+              <li class="about__feature-item">
+                <h3 class="about__feature-heading">
+                Поднимает настроение
+                </h3>
+                <p class="about__feature-description">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="about__feature-item">
+                <h3 class="about__feature-heading">
+                Меняет мир вокруг
+                </h3>
+                <p class="about__feature-description">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="about__feature-item">
+                <h3 class="about__feature-heading">
+                Заводит новых друзей
+                </h3>
+                <p class="about__feature-description">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <h2 class="visually-hidden">Отзывы о приложении Pink</h2>
+        <div class="container">
+          <div class="feedback__wrapper">
+
+            <div class="glide">
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide">
+                    <h3 class="feedback__author">Николай Петров</h3>
+                    <span class="feedback__author-info">25 лет, водитель травмая</span>
+                    <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  </li>
+
+                  <li class="glide__slide">
+                    <h3 class="feedback__author">Николай Петров</h3>
+                    <span class="feedback__author-info">25 лет, водитель травмая</span>
+                    <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  </li>
+
+                  <li class="glide__slide">
+                    <h3 class="feedback__author">Николай Петров</h3>
+                    <span class="feedback__author-info">25 лет, водитель травмая</span>
+                    <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <h2 class="visually-hidden">Цены на использование приложения Pink</h2>
+        <div class="container">
+          <div class="pricing__wrapper">
+            <table class="table table-hover pricing__table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">База <br>
+                    <strong>1,99$</strong>
+                  </th>
+                  <th scope="col">Стандарт <br>
+                    <strong>3,99$</strong>
+                  </th>
+                  <th scope="col">Анлим <br>
+                    <strong>9,99$</strong>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Розовый фильтр</th>
+                  <td>
+                    <i class="fas fa-check fa-2x"></i>
+                  </td>
+                  <td>
+                    <i class="fas fa-check fa-2x"></i>
+                  </td>
+                  <td>
+                    <i class="fas fa-check fa-2x"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Смайлики</th>
+                  <td>
+                    <i class="fas fa-times fa-2x"></i>
+                  </td>
+                  <td>
+                    <i class="fas fa-check fa-2x"></i>
+                  </td>
+                  <td>
+                    <i class="fas fa-check fa-2x"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Комментарии</th>
+                  <td>
+                    <i class="fas fa-times fa-2x"></i>
+                  </td>
+                  <td>
+                    <i class="fas fa-times fa-2x"></i>
+                  </td>
+                  <td>
+                    <i class="fas fa-check fa-2x"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+
+          <div class="contacts__wrapper">
+
+            <h2 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
+
+            <ul class="contacts__list">
+              <li class="contacts__list-item">
+                <span class="contacts__list-item-heading">Звоните:</span>
+                <a href="tel:+7812556677" class="contacts__list-item-anchor">+7 (812) 555-66-77</a>
+              </li>
+
+              <li class="contacts__list-item">
+                <span class="contacts__list-item-heading">Пишите:</span>
+                <a href="mailto:mail@htmlacademy.ru" class="contacts__list-item-anchor">mail@htmlacademy.ru</a>
+              </li>
+
+              <li class="contacts__list-item">
+                <span class="contacts__list-item-heading">Приезжайте в гости:</span>
+                <a href="#" class="contacts__list-item-anchor">ул. Большая Конюшенная, 19/8</a>
+              </li>
+            </ul>
+
+            <!-- <picture>
+              <source media="(min-width: 940px)" srcset="./img/contacts/map-desktop.jpg">
+              <source media="(min-width: 620px)" srcset="./img/contacts/map-tablet.jpg">
+              <img src="./img/contacts/map.jpg" alt="Местоположение на карте" class="contacts__map">
+            </picture> -->
+          </div>
+      </section>
+
+      <section class="map">
+        <div id="mapid"></div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="#" class="page-footer__logo">
+          <picture>
+            <source media="(min-width: 1050px)" srcset="img/logo-footer-desktop.svg">
+            <img src="img/logo-footer-tablet.svg" width="147" height="40" alt="Логотип Pink">
+          </picture>
+        </a>
+        
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <span>Разработано</span>
+            <i><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" width="27px" height="34px">
+              <style type="text/css">
+              .st0-htmlacademy-logo{stroke:#d22856;stroke-miterlimit:10;fill:#d22856;}
+              </style>
+              <path class="st0-htmlacademy-logo" d="M13.5,0.7l-0.1,0L0.8,2v23.1l12.6,7.5L26,25.1V2L13.5,0.7z M24.4,24.2l-11,6.5l-11-6.5v-9.5l10.9,6.5l0,1.2
+                l-7.5-4.5l0,1.1l7.5,4.5l0,1.2l-7.5-4.5l0,1.1l7.5,4.5l7.6-4.5v-1.1l0,0v-0.4v-0.5v-2.9l3.4-2V24.2z M24.3,13.3l-3,1.8L20,15.9
+                l-6.6-3.9l0,1.1l5.6,3.4l0,0l-0.1,0.1L18,17l-4.7-2.8l0,1.1l3.7,2.2l-0.9,0.6l0,0l-2.8-1.6l0,1.1l1.8,1.1l-1.9,1.1L2.5,13.4
+                l10.9-6.5v0L24.3,13.3z M24.4,12.1l-11-6.5v0l0,0l0,0v0L2.4,12.1V3.5l11-1.1l11,1.1V12.1z"/>
+              </svg></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      new Glide('.glide').mount()
+    </script>
+    <script>
+      const mapLocation = [59.9387165, 30.3208587];
+      const zoom = 15;
+
+      const map = L.map(`mapid`, {
+        center: mapLocation,
+        zoom: zoom,
+        zoomControl: true,
+        marker: true
+      });
+      map.setView(mapLocation, zoom);
+
+      const icon = L.icon({
+        iconUrl: `img/map-pin.svg`,
+        iconSize: [30, 30],
+      });
+
+
+      L.tileLayer(`https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png`, { 
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      }).addTo(map);
+
+      const marker = L.marker(mapLocation, {icon}).addTo(map);
+      marker.bindPopup("<b>ул. Большая Конюшенная 19/8</b><br>г. Санкт-Петербург").openPopup();
+    </script> 
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "bootlint src/*.html",
+    "texthtml": "htmlhint src/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootlint": "1.1.0",
+    "browser-sync": "2.26.13",
+    "del": "6.0.0",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-clean-css": "4.3.0",
+    "gulp-group-css-media-queries": "1.2.2",
+    "gulp-imagemin": "7.1.0",
+    "gulp-newer": "1.4.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-webp": "4.0.1",
+    "gulp-webp-html": "1.0.2",
+    "gulp-webpcss": "1.1.1",
+    "htmlhint": "0.14.2",
+    "stylelint": "13.9.0",
+    "stylelint-config-htmlacademy": "0.1.4"
+  }
+}

@@ -1,0 +1,19 @@
+@import "../abstracts//variables.scss";
+
+#mapid { /* stylelint-disable-line selector-max-id */
+  min-height: 250px;
+
+  background-color: #c1c1c1;
+}
+
+@media (min-width: $tablet-width) {
+  #mapid { /* stylelint-disable-line selector-max-id */
+    min-height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  #mapid { /* stylelint-disable-line selector-max-id */
+    min-height: 450px;
+  }
+}

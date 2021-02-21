@@ -1,0 +1,65 @@
+@import "../abstracts/variables.scss";
+
+.cards {
+  margin-top: 20px;
+}
+
+.cards__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.card {
+  margin-bottom: 20px;
+  background-color: $darkgrey-bg;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+
+  span {
+    font-size: 12px;
+    font-family: "Open Sans Light";
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+}
+
+.card__like {
+  color: $pink-text;
+
+  &:hover {
+    color: $pink-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__wrapper {
+    width: $tablet-width;
+  }
+
+  .card {
+    min-height: 455px;
+    margin-bottom: 30px;
+  }
+
+  .card-text {
+    min-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__wrapper {
+    width: $desktop-width;
+  }
+
+  .card {
+    min-height: 455px;
+  }
+
+  .card-text {
+    min-height: 60px;
+  }
+}

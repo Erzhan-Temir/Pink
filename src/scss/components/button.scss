@@ -1,0 +1,27 @@
+$pink: rgba(210, 40, 86, 1);
+$pink-onclick: rgba(210, 40, 86, 0.3);
+
+.btn-custom {
+  height: 55px;
+
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+
+  &:hover {
+    color: $pink;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  &:active {
+    color: $pink;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+}

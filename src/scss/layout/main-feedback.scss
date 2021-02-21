@@ -1,0 +1,80 @@
+@import "../abstracts//variables.scss";
+
+.feedback {
+  margin-top: 50px;
+}
+
+.feedback__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.feedback__author {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.feedback__author-info {
+  display: none;
+}
+
+.feedback__text {
+  margin-bottom: 40px;
+
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-top: 100px;
+  }
+
+  .feedback__wrapper {
+    width: $tablet-width;
+  }
+
+  .feedback__author {
+    margin-bottom: 0;
+
+    font-size: 20px;
+  }
+
+  .feedback__author-info {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    line-height: 30px;
+  }
+
+  .feedback__text {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    margin-top: 50px;
+  }
+
+  .feedback__wrapper {
+    width: $desktop-width;
+  }
+
+  .feedback__author {
+    font-size: 24px;
+  }
+
+  .feedback__author-info {
+    margin-bottom: 18px;
+  }
+
+  .feedback__text {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}

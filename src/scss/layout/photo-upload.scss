@@ -1,0 +1,206 @@
+@import "../abstracts/variables.scss";
+@import "../components/button.scss";
+
+.upload {
+  margin-top: 19px;
+}
+
+.upload__description {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  text-align: center;
+  line-height: 30px;
+}
+
+.upload__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.upload__image {
+  margin-top: 52px;
+}
+
+.btn--upload {
+  border-color: $pink-text;
+  color: $pink-text;
+
+  &:nth-of-type(1) {
+    margin-bottom: 24px;
+  }
+
+  &:hover {
+    background-color: $pink-text;
+    color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.btn--cancel {
+  border-color: $pink-text;
+  color: $pink-text;
+}
+
+.upload__controls {
+  margin-top: 42px;
+  margin-bottom: 38px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #dddfe0;
+
+  input[type="radio"] {
+    display: none;
+
+    + label {
+      fill: #000000;
+      transition: fill 200ms ease;
+    }
+  }
+
+  input[type="radio"]:checked {
+    + label {
+      fill: $pink-text;
+    }
+  }
+
+  input[type="range"] {
+    width: 100%;
+    margin: 6.6px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: #283645;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 0.8px;
+    cursor: pointer;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    margin-top: -6.8px;
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border: 3px solid #d22856;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #314355;
+  }
+  input[type="range"]::-moz-range-track {
+    background: #283645;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 0.8px;
+    cursor: pointer;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border: 3px solid #d22856;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  input[type="range"]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 7.6px 0;
+    color: transparent;
+    width: 100%;
+    height: 0.8px;
+    cursor: pointer;
+  }
+  input[type="range"]::-ms-fill-lower {
+    background: #1f2935;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+  }
+  input[type="range"]::-ms-fill-upper {
+    background: #283645;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+  }
+  input[type="range"]::-ms-thumb {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border: 3px solid #d22856;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type="range"]:focus::-ms-fill-lower {
+    background: #283645;
+  }
+  input[type="range"]:focus::-ms-fill-upper {
+    background: #314355;
+  }
+
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type="range"] {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .upload {
+    margin-top: 43px;
+  }
+
+  .upload__description {
+    width: $tablet-width;
+  }
+
+  .upload__wrapper {
+    width: $tablet-width;
+  }
+
+  .upload__image {
+    margin-top: 60px;
+  }
+
+  .upload__controls {
+    margin-top: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload {
+    margin-top: 43px;
+  }
+
+  .upload__description {
+    font-size: 18px;
+  }
+
+  .upload__wrapper {
+    width: $desktop-width;
+  }
+
+  .btn--upload {
+    display: inline-block;
+    width: 183px;
+
+    &:nth-of-type(1) {
+      margin-top: 8px;
+      margin-right: 44px;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "../abstracts/variables.scss";
+
+.panorama {
+  margin-top: 184px;
+}
+
+.panorama__image-container {
+  position: relative;
+  z-index: 1;
+}
+
+.panorama__image {
+  width: 100%;
+}
+
+.panorama__image-badge {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 10;
+
+  display: inline-block;
+  width: 140px;
+  height: 36px;
+  padding: 7px 20px;
+
+  background-color: $pink-text;
+
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.panorama__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.panorama__author {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+
+  span {
+    font-family: 'Open Sans Light';
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+}
+
+.panorama__like {
+  color: $pink-text;
+
+  &:hover {
+    color: $pink-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__image {
+    height: 509px;
+  }
+
+  .panorama__image-badge {
+    top: 57px;
+  }
+
+  .panorama__wrapper {
+    width: $tablet-width;
+    padding-top: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__wrapper {
+    width: $desktop-width;
+  }
+}

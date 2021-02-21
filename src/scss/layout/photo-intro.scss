@@ -1,0 +1,60 @@
+@import "./abstracts/variables.scss";
+
+.intro {
+  height: 240px;
+
+  background-color: $dark-blue;
+  background-image: url("../img/intro/back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.intro__heading {
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #ffffff;
+  @extend %heading; /* stylelint-disable-line at-rule-empty-line-before, at-rule-no-unknown */
+}
+
+.intro__description {
+  bottom: -400px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    height: 440px;
+    background-image: url("../img/intro/back-tablet@1x.jpg");
+  }
+
+  .intro__heading {
+    bottom: -250px;
+    font-size: 50px;
+  }
+
+  .intro__description {
+    bottom: -590px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/intro/back-desktop@1x.jpg");
+  }
+
+  .intro__heading {
+    width: 400px;
+  }
+
+  .intro__description {
+    bottom: -570px;
+    width: 600px;
+  }
+}

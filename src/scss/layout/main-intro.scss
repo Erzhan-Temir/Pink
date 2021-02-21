@@ -1,0 +1,174 @@
+@import "../abstracts/variables.scss";
+@import "../components/button.scss";
+
+.intro {
+  position: relative;
+
+  background-color: $dark-blue;
+}
+
+.intro__bg--mobile {
+  position: absolute;
+  width: 100%;
+  height: 463px;
+
+  background-image: url("../img/intro/back-mobile@1x.jpg");
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.intro__wrapper {
+  width: $mobile-width;
+  min-height: 733px;
+  margin: 0 auto;
+
+  border-top: 1px solid $dark-blue;
+}
+
+.intro__img {
+  position: relative;
+  z-index: 10;
+
+  margin-top: 148px;
+}
+
+.intro__heading {
+  display: none;
+}
+
+.intro__button {
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+.intro__icon-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro__icon {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--apple {
+    color: #ffffff;
+
+    &:hover,
+    &:active {
+      color: #ffffff;
+    }
+  }
+
+  &--android {
+    color: #a4c639;
+
+    &:hover,
+    &:active {
+      color: #a4c639;
+    }
+  }
+}
+
+.intro__text {
+  margin-top: 28px;
+  margin-bottom: 0;
+
+  padding-right: 25px;
+  padding-left: 25px;
+
+  text-align: center;
+  color: #ffffff;
+  font-weight: $font-weight-light;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-image: url("../img/intro/back-tablet@1x.jpg");
+  }
+
+  .intro__bg--mobile {
+    display: none;
+  }
+
+  .intro__wrapper {
+    position: relative;
+
+    width: $tablet-width;
+  }
+
+  .intro__img {
+    position: absolute;
+    top: 187px;
+    left: 0;
+    z-index: 0;
+
+    margin-top: 0;
+  }
+
+  .intro__description--container {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+  }
+
+  .intro__heading {
+    display: inline-block;
+
+    margin-top: 102px;
+    padding-right: 55px;
+    padding-left: 55px;
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+
+  .intro__button {
+    margin-top: 30px;
+    margin-bottom: 46px;
+  }
+
+  .intro__text {
+    margin-top: 41px;
+    padding: 0;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/intro/back-desktop@1x.jpg");
+  }
+
+  .intro__wrapper {
+    width: $desktop-width;
+  }
+
+  .intro__img {
+    top: 187px;
+    left: 320px;
+  }
+
+  .intro__heading {
+    padding: 0;
+    font-size: 50px;
+  }
+
+  .intro__button {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .intro__text {
+    margin-top: 61px;
+  }
+}

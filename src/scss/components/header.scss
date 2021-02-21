@@ -1,0 +1,57 @@
+@import '../abstracts/variables.scss';
+
+.header__main-nav {
+  min-height: 66px;
+}
+
+.navbar-brand {
+  &:hover {
+  opacity: 0.7;
+  }
+
+  :active {
+    opacity: 0.5;
+  }
+}
+
+.main-nav__list {
+  font-size: 18px;
+  line-height: 32px;
+
+  li {
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15), inset 0px 1px 0px 0px rgba(0,0,0,0.15);
+  }
+}
+
+.navbar-collapse {
+  margin-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .header__main-nav {
+    min-height: 110px;
+  }
+
+  .main-nav__list {
+    line-height: 18px;
+
+    li {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navbar-expand-md .navbar-nav {
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    margin-left: 62px;
+  }
+}

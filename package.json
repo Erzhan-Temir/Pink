@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://erzhan-temir.github.io/Pink/",
   "scripts": {
     "test": "bootlint src/*.html",
-    "texthtml": "htmlhint src/*.html"
+    "texthtml": "htmlhint src/*.html",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +31,8 @@
     "htmlhint": "0.14.2",
     "stylelint": "13.9.0",
     "stylelint-config-htmlacademy": "0.1.4"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

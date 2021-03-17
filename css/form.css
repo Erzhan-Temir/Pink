@@ -6407,7 +6407,7 @@ input[type="radio"].visually-hidden {
 .main-form__checkbox-label {
   position: relative;
   margin-top: 32px;
-  margin-left: 40px;
+  margin-left: 65px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -6460,7 +6460,7 @@ input[type="radio"].visually-hidden {
 .main-form__radio-label {
   position: relative;
   margin-top: 32px;
-  margin-left: 40px;
+  margin-left: 65px;
   font-size: 18px;
   line-height: 30px;
   cursor: pointer;
